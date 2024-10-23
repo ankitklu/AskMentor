@@ -11,6 +11,8 @@ import Table from './components/Table';
 import Footer from './components/Footer';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import AddUser from './components/CRUD/AddUser';
+import Home from './components/CRUD/Home'
 
 function App() {
   return (
@@ -30,9 +32,11 @@ function App() {
         } />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup/>} />
+        <Route path="/home" element = {<Home/>} />
+        <Route path="/add" element={<AddUser/>} />
       </Routes>
 
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }
