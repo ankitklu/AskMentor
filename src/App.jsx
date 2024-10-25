@@ -13,6 +13,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import AddUser from './components/CRUD/AddUser';
 import Home from './components/CRUD/Home'
+import EditUser from './components/CRUD/EditUser';
 
 function App() {
   return (
@@ -34,9 +35,11 @@ function App() {
         <Route path="/signup" element={<Signup/>} />
         <Route path="/home" element = {<Home/>} />
         <Route path="/add" element={<AddUser/>} />
+        <Route path="/editUser/:id" element={<EditUser />} />
+
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
